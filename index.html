@@ -17,134 +17,127 @@
 <header class="nav">
   <a href="#top" class="logo"><i class="logo__dot"></i>NJ</a>
   <nav class="nav__links">
-    <a href="#about">about</a>
-    <a href="#work">work</a>
-    <a href="#stack">stack</a>
-    <a href="#contact" class="nav__cta">say hi ✦</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact" class="nav__cta">Say Hi ✦</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__text">
-      <h1 class="hero__name">SOFTWARE<br/><span>ENGINEER.</span></h1>
-      <p class="hero__blurb">
-        i build <mark>resilient, async-first backends</mark> that quietly power real-world
-        operations at scale — logistics, payments, risk analytics. distributed systems
-        that don't fall over when it matters. 💪
-      </p>
-      <div class="hero__cta">
-        <a href="#work" class="btn btn--dark">see the work →</a>
-        <a href="NishitJainSDE.pdf" download class="btn btn--lime">download my resume ⬇</a>
+  <!-- HERO + ABOUT (merged) -->
+  <section class="hero" id="about">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1 class="hero__name">SOFTWARE<br/><span>ENGINEER</span></h1>
+        <p class="hero__blurb">
+          building <mark>resilient systems</mark> that quietly power real-world operations
+          at scale — logistics, payments, risk analytics. Distributed systems that don't
+          fall over when it matters.
+        </p>
+        <p class="hero__line">I don't just ship code — I ship <span class="hl">trust.</span></p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--dark">See the Work →</a>
+          <a href="NishitJainSDE.pdf" download class="btn btn--lime">Download My Resume ⬇</a>
+        </div>
+      </div>
+
+      <!-- TRADING CARD -->
+      <div class="hero__card">
+        <article class="card">
+          <header class="card__bar">
+            <span>PROFILE</span>
+            <span>★ ENG.01</span>
+          </header>
+          <div class="card__photo">
+            <img src="photo.jpg" alt="Nishit Jain" onerror="this.remove()" />
+            <span class="card__ph">📸<br/>drop <b>photo.jpg</b> here</span>
+          </div>
+          <div class="card__meta">
+            <h2 class="card__name">NISHIT JAIN</h2>
+            <div class="card__socials">
+              <a href="https://www.linkedin.com/in/nishit-jain1" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://github.com/nishitjain1204" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="https://instagram.com/_ni_shit_" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+          <footer class="card__foot">
+            <span class="card__avail"><i></i> AVAILABLE</span>
+            <span>MUMBAI ✦</span>
+          </footer>
+        </article>
       </div>
     </div>
 
-    <!-- TRADING CARD -->
-    <div class="hero__card">
-      <article class="card">
-        <header class="card__bar">
-          <span>PROFILE</span>
-          <span>★ ENG.01</span>
-        </header>
-        <div class="card__photo">
-          <img src="photo.jpg" alt="Nishit Jain" onerror="this.remove()" />
-          <span class="card__ph">📸<br/>drop <b>photo.jpg</b> here</span>
-        </div>
-        <div class="card__meta">
-          <h2 class="card__name">NISHIT JAIN</h2>
-          <p class="card__role">SOFTWARE ENGINEER</p>
-        </div>
-        <footer class="card__foot">
-          <span class="card__avail"><i></i> AVAILABLE</span>
-          <span>MUMBAI ✦</span>
-        </footer>
-      </article>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="tag tag--pink">the vibe ✦ 01</div>
-    <div class="about">
-      <h2 class="about__big">i don't just ship code — i ship <span class="hl">trust.</span></h2>
-      <p>
-        backend engineer with <b>4+ years</b> designing and scaling distributed systems.
-        i thrive in fast-paced, product-driven chaos where things have to be reliable,
-        observable, and easy to evolve. 🛠️
-      </p>
-      <p>
-        i ramp <b>fast</b> in unfamiliar domains and stacks — went from logistics to payments
-        to risk analytics, picking up Temporal &amp; Kafka along the way without dropping code
-        quality. i own things end-to-end: event flows, edge cases, OpenAPI specs, rock-solid
-        API contracts. the whole thing. ✨
-      </p>
-    </div>
     <div class="stats">
-      <div class="stat stat--lime"><b>4+</b><span>years of experience</span></div>
-      <div class="stat stat--blue"><b>300+</b><span>RPS sustained at peak load</span></div>
-      <div class="stat stat--purple"><b>10+</b><span>production services shipped</span></div>
-      <div class="stat stat--pink"><b>3</b><span>engineers led &amp; mentored</span></div>
+      <div class="stat stat--lime"><b>4+</b><span>Years of Experience</span></div>
+      <div class="stat stat--blue"><b>300+</b><span>RPS at Peak Load</span></div>
+      <div class="stat stat--purple"><b>10+</b><span>Services Shipped</span></div>
+      <div class="stat stat--pink"><b>3</b><span>Engineers Mentored</span></div>
     </div>
   </section>
 
   <!-- WORK -->
   <section class="section" id="work">
     <div class="tag tag--blue">the work ✦ 02</div>
-    <h2 class="section__title">places i've leveled up 🎮</h2>
+    <h2 class="section__title">Places I've Leveled Up</h2>
     <div class="jobs">
 
       <article class="job">
         <div class="job__head">
-          <h3>senior software engineer</h3>
-          <span class="job__when">mar '26 — now</span>
+          <h3>Senior Software Engineer</h3>
+          <span class="job__when">Mar '26 — Now</span>
         </div>
-        <p class="job__co">solytics partners pvt. ltd.</p>
+        <p class="job__co">Solytics Partners Pvt. Ltd.</p>
         <ul>
-          <li>leading + mentoring junior engineers on event-driven patterns, resilient APIs &amp; python best practices 🧑‍🏫</li>
-          <li>shipped <b>2 major releases in the first 30 days</b> 🔥</li>
-          <li>turning business goals into a clear technical roadmap with product &amp; cross-functional folks</li>
+          <li>Mentoring engineers on event-driven patterns, resilient APIs &amp; Python best practices</li>
+          <li>Shipped <b>2 major releases in the first 30 days</b></li>
+          <li>Turning business goals into a clear technical roadmap with product teams</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job__head">
-          <h3>software development engineer</h3>
-          <span class="job__when">may '24 — mar '26</span>
+          <h3>Software Development Engineer</h3>
+          <span class="job__when">May '24 — Mar '26</span>
         </div>
-        <p class="job__co">fynd (reliance retail ltd.)</p>
+        <p class="job__co">Fynd (Reliance Retail Ltd.)</p>
         <ul>
-          <li>architected a decoupled, stateless middleware for real-time data sync + workflow orchestration — retries, fault tolerance, full observability</li>
-          <li>built idempotent workflows that scaled to <b>10M+ monthly requests</b> across mission-critical retail systems</li>
-          <li>modular delivery-partner integration automating the whole logistics lifecycle (AWBs, e-way bills, labels, callbacks) — <b>20+ couriers, 900+ vendors</b></li>
-          <li>kafka-based event-driven architecture for high-throughput async processing</li>
-          <li>cache-aside auth strategy → lower latency, <b>100K+ AWB/month</b></li>
+          <li>Architected a stateless middleware for real-time data sync + workflow orchestration — retries, fault tolerance, full observability</li>
+          <li>Built idempotent, Kafka-driven workflows scaling to <b>10M+ monthly requests</b> across mission-critical retail systems</li>
+          <li>Modular delivery-partner integration automating the logistics lifecycle (AWBs, e-way bills, labels, callbacks) — <b>20+ couriers, 900+ vendors</b></li>
+          <li>Cache-aside auth strategy → lower latency, <b>100K+ AWB/month</b></li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job__head">
-          <h3>backend developer</h3>
-          <span class="job__when">sep '23 — apr '24</span>
+          <h3>Backend Developer</h3>
+          <span class="job__when">Sep '23 — Apr '24</span>
         </div>
-        <p class="job__co">happyfox technologies</p>
+        <p class="job__co">HappyFox Technologies</p>
         <ul>
-          <li>built + maintained python backend services for scalable, high-perf helpdesk solutions</li>
-          <li>designed RESTful APIs with reliability, security &amp; clean integrations</li>
-          <li>clean, reusable, well-documented code — best practices &amp; code reviews all day</li>
+          <li>Built + maintained Python backend services for scalable, high-perf helpdesk solutions</li>
+          <li>Designed RESTful APIs with reliability, security &amp; clean integrations</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job__head">
-          <h3>software developer</h3>
-          <span class="job__when">dec '21 — sep '23</span>
+          <h3>Software Developer</h3>
+          <span class="job__when">Dec '21 — Sep '23</span>
         </div>
-        <p class="job__co">grayquest education finance</p>
+        <p class="job__co">GrayQuest Education Finance</p>
         <ul>
-          <li>spearheaded <b>auto-debit</b>, a subscription model for course payments → <b>30% retention boost</b></li>
-          <li>built a fully automated loan verification + disbursement system w/ retries &amp; failure detection → <b>70% faster processing</b></li>
+          <li>Spearheaded <b>auto-debit</b>, a subscription model for course payments → <b>30% retention boost</b></li>
+          <li>Built a fully automated loan verification + disbursement system w/ retries &amp; failure detection → <b>70% faster processing</b></li>
         </ul>
       </article>
 
@@ -154,7 +147,7 @@
   <!-- STACK -->
   <section class="section" id="stack">
     <div class="tag tag--lime">the toolkit ✦ 03</div>
-    <h2 class="section__title">my stack 🧰</h2>
+    <h2 class="section__title">My Stack</h2>
     <div class="stack">
       <div class="stack__group">
         <h4>languages</h4>
@@ -178,20 +171,21 @@
   <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="tag tag--purple">say hi ✦ 04</div>
-    <h2 class="contact__big">got something<br/><span>ambitious?</span> 👀</h2>
-    <p class="contact__sub">i'd love to design, debug &amp; deliver it with you.</p>
+    <h2 class="contact__big">Got Something<br/><span>Ambitious?</span></h2>
+    <p class="contact__sub">I'd love to design, debug &amp; deliver it with you.</p>
     <div class="contact__links">
-      <a href="mailto:nishitjain120420011@gmail.com" class="btn btn--dark">✉ email me</a>
+      <a href="mailto:nishitjain120420011@gmail.com" class="btn btn--dark">✉ Email Me</a>
       <a href="tel:+918268581687" class="btn btn--blue">☎ +91 82685 81687</a>
-      <a href="https://www.linkedin.com/in/nishit-jain1" target="_blank" rel="noopener" class="btn btn--pink">in linkedin</a>
+      <a href="https://www.linkedin.com/in/nishit-jain1" target="_blank" rel="noopener" class="btn btn--pink">LinkedIn</a>
+      <a href="https://github.com/nishitjain1204" target="_blank" rel="noopener" class="btn btn--blue">GitHub</a>
     </div>
   </section>
 
 </main>
 
 <footer class="footer">
-  <span>© <span id="year"></span> nishit jain — built with too much coffee ☕</span>
-  <a href="#top">back to top ↑</a>
+  <span>© <span id="year"></span> Nishit Jain — Built with too much coffee</span>
+  <a href="#top">Back to Top ↑</a>
 </footer>
 
 <script src="script.js"></script>
