@@ -208,6 +208,35 @@ main { max-width: 1040px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 2.5rem); }
 .contact__big { font-family: var(--disp); font-size: clamp(2.4rem, 9vw, 5rem); line-height: .95; letter-spacing: -.03em; color: var(--fg); }
 .contact__big span { color: var(--yellow); }
 .contact__sub { font-size: clamp(1rem, 2.5vw, 1.3rem); margin: 1.3rem 0 2.2rem; color: var(--muted); }
+
+/* contact form */
+.contact__form {
+  width: 100%; max-width: 560px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 1.1rem; text-align: left;
+  background: var(--card); border: var(--bord-y); box-shadow: 6px 6px 0 var(--yellow);
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+}
+.form__row { display: flex; gap: 1.1rem; }
+.form__row input { flex: 1; min-width: 0; }
+.contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
+  width: 100%; font-family: var(--body); font-size: 1rem; color: var(--fg);
+  background: var(--bg); border: 2px solid var(--line); padding: .85rem 1rem;
+  transition: border-color .15s, box-shadow .15s;
+}
+.contact__form input::placeholder, .contact__form textarea::placeholder { color: var(--muted); opacity: .8; }
+.contact__form input[type="text"]:focus, .contact__form input[type="email"]:focus, .contact__form textarea:focus {
+  outline: none; border-color: var(--yellow); box-shadow: 4px 4px 0 var(--yellow);
+}
+.contact__form textarea { resize: vertical; min-height: 130px; line-height: 1.5; }
+.form__submit { width: 100%; cursor: pointer; font-family: var(--body); margin-top: .2rem; }
+.form__submit:hover { background: var(--yellow); color: #0a0a0a; transform: none; box-shadow: none; }
+.form__submit:disabled { opacity: .55; cursor: default; }
+.hp { position: absolute; left: -9999px; opacity: 0; }
+.form__status { font-family: var(--mono); font-size: .85rem; min-height: 1.2em; margin: .1rem 0 0; }
+.form__status.ok { color: var(--yellow); }
+.form__status.err { color: #ff6b6b; }
+@media (max-width: 520px) { .form__row { flex-direction: column; } }
+
 .contact__links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
 /* ===== FOOTER ===== */

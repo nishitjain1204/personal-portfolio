@@ -66,3 +66,40 @@ const spy = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-55% 0px -35% 0px", threshold: 0 });
 spyTargets.forEach((s) => spy.observe(s));
+
+// contact form — submit via Web3Forms (no page redirect)
+const form = document.getElementById("contactForm");
+if (form) {
+  const status = document.getElementById("formStatus");
+  const btn = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const label = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    status.textContent = "";
+    status.className = "form__status";
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        status.textContent = "Thanks! Your message has been sent. ✦";
+        status.classList.add("ok");
+        form.reset();
+      } else {
+        status.textContent = data.message || "Couldn't send — please email me directly.";
+        status.classList.add("err");
+      }
+    } catch (err) {
+      status.textContent = "Network error — please email me directly.";
+      status.classList.add("err");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = label;
+    }
+  });
+}

@@ -172,12 +172,20 @@
     <div class="tag">say hi ✦ 03</div>
     <h2 class="contact__big">Got Something<br/><span>Ambitious?</span></h2>
     <p class="contact__sub">I'd love to design, debug &amp; deliver it with you.</p>
-    <div class="contact__links">
-      <a href="mailto:nishitjain120420011@gmail.com" class="btn btn--dark">✉ Email Me</a>
-      <a href="tel:+918268581687" class="btn">☎ +91 82685 81687</a>
-      <a href="https://www.linkedin.com/in/nishit-jain1" target="_blank" rel="noopener" class="btn">LinkedIn</a>
-      <a href="https://github.com/nishitjain1204" target="_blank" rel="noopener" class="btn">GitHub</a>
-    </div>
+
+    <form class="contact__form" id="contactForm">
+      <!-- Web3Forms access key (free, from https://web3forms.com) -->
+      <input type="hidden" name="access_key" value="1e437023-0474-4968-9303-bca025703232" />
+      <input type="hidden" name="subject" value="New message from your portfolio" />
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <div class="form__row">
+        <input type="text" name="name" placeholder="Name" aria-label="Name" required />
+        <input type="email" name="email" placeholder="Email" aria-label="Email" required />
+      </div>
+      <textarea name="message" rows="5" placeholder="Message" aria-label="Message" required></textarea>
+      <button type="submit" class="btn btn--dark form__submit">Send Message →</button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
 </main>
